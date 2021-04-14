@@ -22,6 +22,8 @@ public class Printer {
                 return -1;
             }
             this.tonerLevel += tonerAmount;
+        } else {
+            return -1;
         }
 
         return this.tonerLevel;
@@ -39,7 +41,7 @@ public class Printer {
 
         this.pagesPrinted += pagesToPrint;
 
-        return this.getPagesPrinted();
+        return pagesToPrint;
     }
 
 
